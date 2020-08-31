@@ -1,3 +1,9 @@
+# if ENV['development']
+#   source 'http://ruby.taobao.org/'
+# else
+#   source 'https://rubygems.org'
+# end
+# source 'http://ruby.taobao.org/'
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -15,6 +21,8 @@ gem 'puma', '~> 4.1'
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
+gem 'dotenv-rails'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
